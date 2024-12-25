@@ -40,7 +40,7 @@ export default function Navbars() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link disabled text-dark" aria-disabled="true" to="/Contact">
+              <Link className="nav-link text-dark" href="#card" to="/Contact">
                   Contact
                 </Link>
               </li>

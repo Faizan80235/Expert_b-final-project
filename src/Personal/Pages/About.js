@@ -7,6 +7,7 @@ import image4 from '../images/images.jpeg'
 import image5 from '../images/grocery-banner.png'
 import image6 from '../images/grocery-banner-2.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 import { Container } from 'react-bootstrap';
 import Carasuel from '../Carasuel'
 import Footer from '../Footer'
