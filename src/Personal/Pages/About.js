@@ -4,6 +4,8 @@ import image1 from '../images/ad-banner-1.jpg'
 import image2 from '../images/ad-banner-2.jpg'
 import image3 from '../images/ad-banner-3.jpg'
 import image4 from '../images/images.jpeg'
+import image5 from '../images/grocery-banner.png'
+import image6 from '../images/grocery-banner-2.jpg'
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import { Container } from 'react-bootstrap';
 import Carasuel from '../Carasuel'
@@ -22,6 +24,8 @@ function About() {
         style={{
               background: `url(${image1})`,
                   padding:'8%',
+             
+                  // backgroundSize:"cover",
                   borderRadius:'5%'
         }}
       >
@@ -112,7 +116,15 @@ function About() {
   </div>
 
 <br />
-<div className="col-xl-4 col-lg-6 col-12">
+
+
+   
+
+      </Container>
+ <Container>
+
+  <div className='row'>
+  <div className="col-xl-4 col-lg-6 col-12">
       <div
         className="p-8 mb-3 rounded bg-cover "
         style={{
@@ -143,13 +155,45 @@ function About() {
           </a>
         </div>
       </div>
+
+
+      
     </div>
-
-
-      </Container>
+ <div className="col-xl-4 col-lg-6 col-12">
+      <div
+        className="p-8 mb-3 rounded  bg-no-repeat"
+        style={{
+              background: `url(${image5})`,
+                  padding:'8%',
+                  width:'200%',
+                  backgroundSize:"auto",
+                  backgroundRepeat:"no-repeat",
+                  borderRadius:'5%'
+        }}
+      >
+        <div>
+          <h3 className="mb-0 fw-bold">
+            Fruits and<br /> Vegetables
+          </h3>
+          <div className="mt-4 mb-5 text-lg">
+            <p className="mb-0">Get up 30% OFF EVERY SUNDAY</p>
+            
+          </div>
+          <a
+            role="button"
+            tabIndex={0}
+            href="#"
+            className="btn btn-dark"
+            aria-label="Shop now for personal care deals"
+          >
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
  
-
-
+ </Container>
 
     </div>
   )
