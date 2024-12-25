@@ -7,10 +7,10 @@ export default function Navbars() {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
 
-          <Link className="navbar-brand">
+          <a className="navbar-brand">
             <img src={image} className="mt-3" />
 
-          </Link>
+          </a>
           <button
             className="navbar-toggler"
             type="button"

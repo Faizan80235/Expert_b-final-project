@@ -1,6 +1,6 @@
 import React from 'react'
 import "./footer.css"
-
+import { Link } from 'react-router-dom'
 
 
 export default function Footer() {
@@ -15,14 +15,15 @@ export default function Footer() {
                 <div className="col-6">
                   <div className="flex-column nav">
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
+                      <Link  role="button" className="nav-link" tabIndex={0} to="Vegetables&Fruits">
                         Vegetables &amp; Fruits
-                      </a>
+                      </Link>
+                      
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
+                      <Link href="#" role="button" className="nav-link" tabIndex={0} to="Breakfast & instant food">
                         Breakfast &amp; instant food
-                      </a>
+                      </Link>
                     </div>
                     <div className="mb-2 nav-item">
                       <a href="#" role="button" className="nav-link" tabIndex={0}>

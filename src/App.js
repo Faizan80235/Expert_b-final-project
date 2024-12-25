@@ -1,10 +1,9 @@
-import React from 'react';
-import Carasuel from '../src/Personal/Carasuel';
-import Routing from '../src/Personal/Routes/Routing';
+import React from 'react'
+import Routing from "./Personal/Routes/Routing"
 function App() {
   return (
     <div>
-      <Routing></Routing>
+  <Routing />
     </div>
   )
 }
