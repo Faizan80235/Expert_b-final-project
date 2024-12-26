@@ -26,19 +26,19 @@ export default function Footer() {
                       </Link>
                     </div>
                     <div className="mb-2 nav-item">
-                      <Link href="#" role="button" className="nav-link" tabIndex={0} to="Bakery & Biscuits">
+                      <a href="#" role="button" className="nav-link" tabIndex={0}>
                         Bakery &amp; Biscuits
-                      </Link>
+                      </a>
                     </div>
                     <div className="mb-2 nav-item">
-                      <Link href="#" role="button" className="nav-link" tabIndex={0} to="Atta rice $ dal">
+                      <a href="#" role="button" className="nav-link" tabIndex={0}>
                         Atta, rice &amp; dal
-                      </Link>
+                      </a>
                     </div>
                     <div className="mb-2 nav-item">
-                      <Link href="#" role="button" className="nav-link" tabIndex={0} to="Sauces & spreads">
+                      <a href="#" role="button" className="nav-link" tabIndex={0}>
                         Sauces &amp; spreads
-                      </Link>
+                      </a>
                     </div>
                     <div className="mb-2 nav-item">
                       <a href="#" role="button" className="nav-link" tabIndex={0}>

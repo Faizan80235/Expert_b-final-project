@@ -1,9 +1,11 @@
-
 .footer{
- background-color: rgb(233, 233, 233);
-    padding: 4rem 0;
+    padding-top: 0%;
+    padding-left: 13%;
+    padding-right: 13%;
 }
-
+footer{
+    width: fit-content;
+}
 a{
     padding: 0%;
 }

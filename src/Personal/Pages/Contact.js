@@ -167,9 +167,9 @@ function Contact() {
             <br />
             <br />
             <br />
-            <Footer></Footer>
+          
             </div>
-       
+            <Footer></Footer>
 
         </div>
 
