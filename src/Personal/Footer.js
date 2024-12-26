@@ -15,13 +15,13 @@ export default function Footer() {
                 <div className="col-6">
                   <div className="flex-column nav">
                     <div className="mb-2 nav-item">
-                      <Link  role="button" className="nav-link" tabIndex={0} to="Vegetables&Fruits">
-                        Vegetables &amp; Fruits
+                      <Link  role="button" className="nav-link" tabIndex={0} to="Fruits">
+                     Fruits
                       </Link>
                       
                     </div>
                     <div className="mb-2 nav-item">
-                      <Link href="#" role="button" className="nav-link" tabIndex={0} to="Breakfast & instant food">
+                      <Link href="#" role="button" className="nav-link" tabIndex={0} to="Breakfast">
                         Breakfast &amp; instant food
                       </Link>
                     </div>

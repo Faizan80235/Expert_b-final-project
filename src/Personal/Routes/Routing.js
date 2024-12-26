@@ -6,6 +6,8 @@ import About from '../Pages/About'
 import Contact from '../Pages/Contact'
 import Signup from '../Pages/Signup'
 import Product from '../Pages/Product'
+import Fruits from '../Pages/Fruits'
+import Breakfast from '../Pages/Breakfast'
 function Routing() {
   return (
     <div>
@@ -17,6 +19,18 @@ function Routing() {
           <Route path='/Contact' element={<Contact />}  ></Route>
           <Route path='/Signup' element={<Signup />}  ></Route>
           <Route path='/Products' element={<Product />}  ></Route>
+          <Route path='Contact/Fruits' element={<Fruits />}  ></Route>
+          <Route path='About/Fruits' element={<Fruits />}  ></Route>
+          <Route path='Product/Fruits' element={<Fruits />}  ></Route>
+          <Route path='/Fruits' element={<Fruits />}  ></Route>
+          <Route path='/Breakfast' element={<Breakfast />}  ></Route>
+          <Route path='Product/Breakfast' element={<Breakfast />}  ></Route>
+          <Route path='Contact/Fruits/Breakfast' element={<Breakfast />}  ></Route>
+          <Route path='Product/Fruits/Breakfast' element={<Breakfast />}  ></Route>
+          <Route path='About/Breakfast' element={<Breakfast />}  ></Route>
+          <Route path='Contact/Breakfast' element={<Breakfast />}  ></Route>
+          <Route path='About/Fruits/Breakfast' element={<Breakfast />}  ></Route>
+          <Route path='/Fruits/Breakfast' element={<Breakfast />}  ></Route>
 
 
         
