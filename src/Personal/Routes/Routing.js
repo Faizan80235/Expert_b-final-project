@@ -5,6 +5,7 @@ import Navbars from '../Navbars'
 import About from '../Pages/About'
 import Contact from '../Pages/Contact'
 import Signup from '../Pages/Signup'
+import Product from '../Pages/Product'
 function Routing() {
   return (
     <div>
@@ -15,6 +16,7 @@ function Routing() {
           <Route path='/About' element={<About />}  ></Route>
           <Route path='/Contact' element={<Contact />}  ></Route>
           <Route path='/Signup' element={<Signup />}  ></Route>
+          <Route path='/Products' element={<Product />}  ></Route>
 
 
         

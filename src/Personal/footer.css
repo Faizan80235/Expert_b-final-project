@@ -1,11 +1,9 @@
+
 .footer{
-    padding-top: 0%;
-    padding-left: 13%;
-    padding-right: 13%;
+ background-color: rgb(233, 233, 233);
+    padding: 4rem 0;
 }
-footer{
-    width: fit-content;
-}
+
 a{
     padding: 0%;
 }
