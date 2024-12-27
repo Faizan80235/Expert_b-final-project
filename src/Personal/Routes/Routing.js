@@ -8,6 +8,7 @@ import Signup from '../Pages/Signup'
 import Product from '../Pages/Product'
 import Fruits from '../Pages/Fruits'
 import Breakfast from '../Pages/Breakfast'
+import Footer from '../Footer'
 function Routing() {
   return (
     <div>
@@ -31,6 +32,7 @@ function Routing() {
           <Route path='Contact/Breakfast' element={<Breakfast />}  ></Route>
           <Route path='About/Fruits/Breakfast' element={<Breakfast />}  ></Route>
           <Route path='/Fruits/Breakfast' element={<Breakfast />}  ></Route>
+          <Route path='/Contact/Breakfast/Fruits' element={<Breakfast />}  ></Route>
 
 
         

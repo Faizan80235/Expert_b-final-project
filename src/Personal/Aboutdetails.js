@@ -5,11 +5,15 @@ import image4 from './images/product-img-8.jpg';
 import image5 from  './images/th.jpeg'
 import image6 from './images/download.jpeg'
 import image7 from './images/OIP.jpeg'
-// import image5 from './images/product-img-cornflakes.jpg'; // Image for Cornflakes
-// import image6 from './images/product-img-peanut-butter.jpg'; // New image for Peanut Butter
-// import image7 from './images/product-img-oreo.jpg'; // New image for Oreo Biscuits
+import Products from "./Products";
+
 
 let details = [
+    {
+        "Productname": "Haldiram's Sev Bhujia",
+        "Productdetails": "A single serving of 50 grams has 300 calories and 43.5% of those calories come from FAT. Moreover it isn't only about calories or Fat. It's a processed food and its intake should be limited.",
+        "Productimage": image,
+    },
     {
         "Productname": "Haldiram's Sev Bhujia",
         "Productdetails": "A single serving of 50 grams has 300 calories and 43.5% of those calories come from FAT. Moreover it isn't only about calories or Fat. It's a processed food and its intake should be limited.",
@@ -19,6 +23,11 @@ let details = [
         "Productname": "Nutri Choice",
         "Productdetails": "Britannia NutriChoice Digestive Biscuits are fibre-rich biscuits packed with the richness of wheat flour (atta) and bran. With every bite, you experience the coarseness of this fibre-rich healthy biscuit.",
         "Productimage": image2,
+    },
+    {
+        "Productname": "Amul Butter",
+        "Productdetails": "Amul butter contains milk fat, salt, and annatto extract color. Amul butter contains at least 80% milk fat, up to 16% moisture, up to 2.5% salt, and up to 1.5% milk solids-not-fat.",
+        "Productimage": image3,
     },
     {
         "Productname": "Amul Butter",
@@ -42,7 +51,7 @@ let details = [
     },
     {
         "Productname": "Oreo Biscuits",
-        "Productdetails": "Oreo cookies are a beloved sandwich cookie consisting of two chocolate wafers with a delicious cream filling in between. Enjoyed by people of all ages.",
+        "Productdetails": "Oreo cookies are a beloved sandwich cookie consisting of two chocolate wafers with a delicious cream filling in between. Enjoyed by people of all ages The Product is very useful for child eat Everyone like this Product",
         "Productimage": image7,
     }
 ];
