@@ -17,6 +17,7 @@ function Routing() {
           <Route path='/Contact' element={<Contact />}  ></Route>
           <Route path='/Signup' element={<Signup />}  ></Route>
           <Route path='/Products' element={<Product />}  ></Route>
+          <Route path='/Admin' element={<Product />}  ></Route>
          
 
         
