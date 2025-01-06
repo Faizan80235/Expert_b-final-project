@@ -3,7 +3,7 @@ import Sidebars from "./Dashboard/Sidebars"
 function App() {
   return (
     <div>
-<Sidebars></Sidebars>
+    <Sidebars></Sidebars>
     </div>
   )
 }
