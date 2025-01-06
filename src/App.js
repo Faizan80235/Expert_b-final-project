@@ -1,31 +1,11 @@
 import React from 'react'
-import Routing from "./Personal/Routes/Routing"
-
+import Sidebars from "./Dashboard/Sidebars"
 function App() {
   return (
     <div>
-  <Routing />
+<Sidebars></Sidebars>
     </div>
   )
 }
 
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

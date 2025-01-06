@@ -1,5 +1,5 @@
 import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 import "bootstrap/dist/js/bootstrap.bundle"
 import 'bootstrap/dist/css/bootstrap.min.css'; 
 import Apple from "../images/Apple.png"
@@ -7,6 +7,16 @@ import Kiwi from '../images/Fresh-kiwi.jpg'
 import banana from '../images/Banana.jpg'
 import Golden from '../images/Golden-Pineapple.jpg'
 import Crushed from '../images/Crushed.jpg'
+import product1 from '../images/product-img-1.jpg'
+import product2 from '../images/product-img-2.jpg'
+import product3 from '../images/product-img-3.jpg'
+import product4 from '../images/download (1).jpeg'
+import product5 from '../images/download (2).jpeg'
+import product6 from '../images/product-img-6.jpg'
+import product7 from '../images/product-img-7.jpg'
+import product8 from '../images/product-img-8.jpg'
+import product9 from '../images/product-img-9.jpg'
+import product10 from '../images/product-img-10.jpg'
 import Footer from '../Footer'
 
 const Breakfast = () => {
@@ -1530,7 +1540,7 @@ const Breakfast = () => {
             className="text-inherit text-decoration-none"
             href="/shop/kelloggs-original-cereals"
           >
-           Wat fresh Kiwi
+ fresh Kiwi
           </a>
         </h2>
         <div className="d-inline-flex gap-1 align-items-center ">
@@ -1640,7 +1650,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/haldirams-sev-bhujia">
             <img
-              src="/images/products/product-img-1.jpg"
+              src={product1}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -1804,7 +1814,7 @@ const Breakfast = () => {
           <div className="position-absolute top-0 start-0 " />
           <a href="/shop/nutrichoice-digestive">
             <img
-              src="/images/products/product-img-2.jpg"
+              src={product2}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -1972,7 +1982,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/cadbury-5-star-chocolate">
             <img
-              src="/images/products/product-img-3.jpg"
+              src={product3}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -2141,7 +2151,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/onion-flavour-potato">
             <img
-              src="/images/products/product-img-4.jpg"
+              src={product4}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -2307,7 +2317,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/salted-instant-popcorn">
             <img
-              src="/images/products/product-img-5.jpg"
+              src={product5}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -2475,7 +2485,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/cadbury-5-star-chocolate">
             <img
-              src="/images/products/product-img-3.jpg"
+              src={product3}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -2644,7 +2654,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/haldirams-sev-bhujia">
             <img
-              src="/images/products/product-img-1.jpg"
+              src={product1}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -2810,7 +2820,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/blueberry-greek-yogurt">
             <img
-              src="/images/products/product-img-6.jpg"
+            src={product6}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -2974,7 +2984,7 @@ const Breakfast = () => {
           <div className="position-absolute top-0 start-0 " />
           <a href="/shop/britannia-cheese-slices">
             <img
-              src="/images/products/product-img-7.jpg"
+              src={product7}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -3140,7 +3150,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/kelloggs-original-cereals">
             <img
-              src="/images/products/product-img-8.jpg"
+              src={product8}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -3304,7 +3314,7 @@ const Breakfast = () => {
           <div className="position-absolute top-0 start-0 " />
           <a href="/shop/nutrichoice-digestive">
             <img
-              src="/images/products/product-img-2.jpg"
+              src={product2}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -3468,7 +3478,7 @@ const Breakfast = () => {
           <div className="position-absolute top-0 start-0 " />
           <a href="/shop/slurrp-millet-chocolate">
             <img
-              src="/images/products/product-img-9.jpg"
+              src={product9}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -3634,7 +3644,7 @@ const Breakfast = () => {
           </div>
           <a href="/shop/amul-butter-500-g">
             <img
-              src="/images/products/product-img-10.jpg"
+              src={product10}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -3798,7 +3808,7 @@ const Breakfast = () => {
           <div className="position-absolute top-0 start-0 " />
           <a href="/shop/nutrichoice-digestive">
             <img
-              src="/images/products/product-img-2.jpg"
+              src={product2}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
@@ -3962,7 +3972,7 @@ const Breakfast = () => {
           <div className="position-absolute top-0 start-0 " />
           <a href="/shop/slurrp-millet-chocolate">
             <img
-              src="/images/products/product-img-9.jpg"
+              src={product9}
               alt="Grocery Ecommerce Template"
               className="mb-3 img-fluid"
             />
