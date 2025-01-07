@@ -12,7 +12,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import image from '../Personal/images/slider-image-1.jpg';
 import { Link } from 'react-router-dom';
-import "./style6.css"
+
 function Dashboard() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   
