@@ -1,0 +1,101 @@
+/* Adjust the margin of the main content area when the sidebar is visible */
+.ms-lg-250 {
+    margin-left: 250px; /* Match the sidebar width */
+  }
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  .form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-top: 7%;
+  }
+  
+  form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .image-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #aaa;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .form-container {
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  @media (max-width: 992px) {
+    .ms-lg-250 {
+      margin-left: 0; /* Reset for smaller screens */
+    }
+  }
+  
+  /* Add spacing for the cards and other sections */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Make the sidebar fixed but scrollable */
+  .sidebar {
+    overflow-y: auto;
+    height: 100vh;
+  }
+  

@@ -1,9 +1,11 @@
 import React from 'react'
-import Sidebars from "./Dashboard/Sidebars"
+import Rout from './Dashboard/Routes/Rout'
+// import Sidebars from "./Dashboard/Sidebars"
 function App() {
   return (
     <div>
-    <Sidebars></Sidebars>
+      <Rout></Rout>
+    {/* <Sidebars></Sidebars> */}
     </div>
   )
 }
