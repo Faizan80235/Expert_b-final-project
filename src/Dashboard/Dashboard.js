@@ -11,7 +11,8 @@ import {
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import image from '../Personal/images/slider-image-1.jpg';
-
+import { Link } from 'react-router-dom';
+import "./style6.css"
 function Dashboard() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   
@@ -73,7 +74,13 @@ function Carasuel() {
       <div style={{ maxWidth: '400px' }}>
         <h1 className="fw-bold">Welcome back! FreshCart</h1>
         <p>FreshCart is simple & clean design for developers and designers.</p>
-        <button className="btn btn-success">Create Product</button>
+     
+          <Link to="/Product">
+          <button className="btn btn-success" >
+          Create Product
+          </button>
+
+          </Link>
       </div>
     </div>
   );
