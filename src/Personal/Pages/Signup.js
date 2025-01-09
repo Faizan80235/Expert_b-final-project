@@ -222,11 +222,11 @@ function Signup() {
             <br />
             <br />
             <br />
-          
+            <br />
+            <br />
+            <br />
             </div>
-            <Footer></Footer>
-
-        </div>
+            <Footer></Footer></div>
 
         )
     }

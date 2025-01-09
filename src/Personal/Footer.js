@@ -1,113 +1,74 @@
 import React from 'react'
 import "./footer.css"
-import { Link } from 'react-router-dom'
-
 
 export default function Footer() {
   return (
     <div>
-      <footer className="footer" >
-        <div className="container">
+      <footer className="footer mt-0" >
+        <div className="container mt-0">
           <div className="g-4 py-4 row">
             <div className="col-lg-4 col-md-12 col-12">
-              <h6 className="mb-4">Categories</h6>
+              <h6 className="">Categories</h6>
               <div className="row">
                 <div className="col-6">
                   <div className="flex-column nav">
                     <div className="mb-2 nav-item">
-                      <Link  role="button" className="nav-link" tabIndex={0} to="Fruits">
-                     Fruits
-                      </Link>
-                      
+                      <h6>Fruits</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <Link href="#" role="button" className="nav-link" tabIndex={0} to="Breakfast">
-                        Breakfast &amp; instant food
-                      </Link>
+                      <h6>Breakfast &amp; instant food</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Bakery &amp; Biscuits
-                      </a>
+                      <h6>Bakery &amp; Biscuits</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Atta, rice &amp; dal
-                      </a>
+                      <h6>Atta, rice &amp; dal</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Sauces &amp; spreads
-                      </a>
+                      <h6>Sauces &amp; spreads</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Organic &amp; gourmet
-                      </a>
+                      <h6>Organic &amp; gourmet</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Baby care
-                      </a>
+                      <h6>Baby care</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Cleaning essentials
-                      </a>
+                      <h6>Cleaning essentials</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Personal care
-                      </a>
+                      <h6>Personal care</h6>
                     </div>
                   </div>
                 </div>
                 <div className="col-6">
                   <div className="flex-column nav">
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Dairy, bread &amp; eggs
-                      </a>
+                      <h6>Dairy, bread &amp; eggs</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Cold drinks &amp; juices
-                      </a>
+                      <h6>Cold drinks &amp; juices</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Tea, coffee &amp; drinks
-                      </a>
+                      <h6>Tea, coffee &amp; drinks</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Masala, oil &amp; more
-                      </a>
+                      <h6>Masala, oil &amp; more</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Chicken, meat &amp; fish
-                      </a>
+                      <h6>Chicken, meat &amp; fish</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Paan corner
-                      </a>
+                      <h6>Paan corner</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Pharma &amp; wellness
-                      </a>
+                      <h6>Pharma &amp; wellness</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Home &amp; office
-                      </a>
+                      <h6>Home &amp; office</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Pet care
-                      </a>
+                      <h6>Pet care</h6>
                     </div>
                   </div>
                 </div>
@@ -119,29 +80,19 @@ export default function Footer() {
                   <h6 className="mb-4">Get to know us</h6>
                   <div className="flex-column nav">
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Company
-                      </a>
+                      <h6>Company</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        About
-                      </a>
+                      <h6>About</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Blog
-                      </a>
+                      <h6>Blog</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Help Center
-                      </a>
+                      <h6>Help Center</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Our Value
-                      </a>
+                      <h6>Our Value</h6>
                     </div>
                   </div>
                 </div>
@@ -149,29 +100,19 @@ export default function Footer() {
                   <h6 className="mb-4">For Consumers</h6>
                   <div className="flex-column nav">
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Payments
-                      </a>
+                      <h6>Payments</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Shipping
-                      </a>
+                      <h6>Shipping</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Product Returns
-                      </a>
+                      <h6>Product Returns</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        FAQ
-                      </a>
+                      <h6>FAQ</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Shop Checkout
-                      </a>
+                      <h6>Shop Checkout</h6>
                     </div>
                   </div>
                 </div>
@@ -179,29 +120,19 @@ export default function Footer() {
                   <h6 className="mb-4">Become a Shopper</h6>
                   <div className="flex-column nav">
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Shopper Opportunities
-                      </a>
+                      <h6>Shopper Opportunities</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Become a Shopper
-                      </a>
+                      <h6>Become a Shopper</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Earnings
-                      </a>
+                      <h6>Earnings</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Ideas &amp; Guides
-                      </a>
+                      <h6>Ideas &amp; Guides</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        New Retailers
-                      </a>
+                      <h6>New Retailers</h6>
                     </div>
                   </div>
                 </div>
@@ -209,29 +140,19 @@ export default function Footer() {
                   <h6 className="mb-4">Healthy Cart programs</h6>
                   <div className="flex-column nav">
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Healthycart programs
-                      </a>
+                      <h6>Healthycart programs</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Gift Cards
-                      </a>
+                      <h6>Gift Cards</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Promos &amp; Coupons
-                      </a>
+                      <h6>Promos &amp; Coupons</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Healthycart Ads
-                      </a>
+                      <h6>Healthycart Ads</h6>
                     </div>
                     <div className="mb-2 nav-item">
-                      <a href="#" role="button" className="nav-link" tabIndex={0}>
-                        Careers
-                      </a>
+                      <h6>Careers</h6>
                     </div>
                   </div>
                 </div>
@@ -242,61 +163,33 @@ export default function Footer() {
             <div className="align-items-center row">
               <div className="text-lg-start text-center mb-2 mb-lg-0 col-lg-5">
                 <ul className="mb-0 undefined list-inline">
-
                   <li className="list-inline-item ">
-                    <a href="">
-                      <img
-                        src="/images/payment/american-express.svg"
-                        alt=""
-                        className=""
-                      />
-                    </a>
+                    <h6>American Express</h6>
                   </li>
                   <li className="list-inline-item ">
-                    <a href="">
-                      <img
-                        src="/images/payment//mastercard.svg"
-                        alt=""
-                        className=""
-                      />
-                    </a>
+                    <h6>MasterCard</h6>
                   </li>
                   <li className="list-inline-item ">
-                    <a href="">
-                      <img src="/images/payment/paypal.svg" alt="" className="" />
-                    </a>
+                    <h6>PayPal</h6>
                   </li>
                   <li className="list-inline-item">
-                    <a href="">
-                      <img src="/images/payment/visa.svg" alt="" className="" />
-                    </a>
+                    <h6>Visa</h6>
                   </li>
                 </ul>
               </div>
               <div className="mt-4 mt-md-0 col-lg-7">
                 <div className="list-inline mb-0 text-lg-end text-center">
-                  <div className="list-inline-item mb-2 mb-md-0 text-dark">
+                  <div className="list-inline-item mb-2 mb-md-0 ">
+                    <h6>
                     Get deliveries with Healthy Cart
+
+                    </h6>
                   </div>
                   <div className="list-inline-item ms-5 me-3">
-                    <a href="#!">
-                      <img
-                        src="/images/appbutton/appstore-btn.svg"
-                        alt=""
-                        style={{ width: 140 }}
-                        className=""
-                      />
-                    </a>
+                    <h6>App Store</h6>
                   </div>
                   <div className="list-inline-item">
-                    <a href="#!">
-                      <img
-                        src="/images/appbutton/googleplay-btn.svg"
-                        alt=""
-                        style={{ width: 140 }}
-                        className=""
-                      />
-                    </a>
+                    <h6>Google Play</h6>
                   </div>
                 </div>
               </div>
@@ -305,59 +198,25 @@ export default function Footer() {
           <div className="border-top py-4">
             <div className="align-items-center row">
               <div className="col-md-6">
-                <span className="small text-muted">
-                  © 2022 <span id="copyright">-{/* */}2024</span> {/* */}HealthyCart
-                  . All rights reserved. Powered by
-                  <a target="_blank" href="">
-                    {/* */}Healthy Cart
-                  </a>
-                  .
+                <span className="small ">
+                  <h6>
+                  © 2022 HealthyCart. All rights reserved. Powered by
+                  </h6>
+                
+                  <h6>Healthy Cart</h6>
                 </span>
               </div>
               <div className="col-md-6">
                 <ul className="list-inline text-md-end mb-0 small mt-3 mt-md-0">
-                  <li className="list-inline-item text-muted">Follow us on</li>
+                  <li className="list-inline-item">Follow us on</li>
                   <li className="me-2 list-inline-item">
-                    <a className="btn btn-xs btn-social btn-icon" href="#!">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        width={16}
-                        height={16}
-                        fill="currentColor"
-                        className="bi bi-facebook"
-                      >
-                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
-                      </svg>
-                    </a>
+                    <h6>Facebook</h6>
                   </li>
                   <li className="me-2 list-inline-item">
-                    <a className="btn btn-xs btn-social btn-icon" href="#!">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        width={16}
-                        height={16}
-                        fill="currentColor"
-                        className="bi bi-twitter"
-                      >
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"></path>
-                      </svg>
-                    </a>
+                    <h6>Twitter</h6>
                   </li>
                   <li className="me-2 list-inline-item">
-                    <a className="btn btn-xs btn-social btn-icon" href="#!">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        width={16}
-                        height={16}
-                        fill="currentColor"
-                        className="bi bi-instagram"
-                      >
-                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
-                      </svg>
-                    </a>
+                    <h6>Instagram</h6>
                   </li>
                 </ul>
               </div>
