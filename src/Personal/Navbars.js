@@ -83,7 +83,7 @@ export default function Navbars() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 top-0 left-0" style={{ zIndex: 1050, backgroundColor: '#ffffff' }}>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <a className="navbar-brand">
             <img src={image} className="mt-3" alt="Logo" />
