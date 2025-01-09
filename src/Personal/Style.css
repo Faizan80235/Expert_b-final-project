@@ -1,0 +1,56 @@
+/* Fixed Navbar Styling */
+.navbar {
+    position: fixed; /* Fixed position at the top */
+    top: 0; /* Align it to the top */
+    left: 0; /* Align it to the left */
+    right: 0; /* Align it to the right */
+    z-index: 1030; /* Ensure the navbar stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect for depth */
+    background-color: #ffffff !important; /* Set the navbar background */
+    transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+  }
+  
+  /* Add a background color change on scroll */
+  .navbar.scrolled {
+    background-color: #f8f9fa !important; /* Light background on scroll */
+  }
+  
+  /* Customize Navbar Items */
+  .navbar-nav .nav-item .nav-link {
+    color: #333; /* Dark text for links */
+    font-weight: 500; /* Slightly bold text for better readability */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+    color: #28a745; /* Green color on hover */
+  }
+  
+  /* Customize Navbar Brand */
+  .navbar-brand img {
+    height: 40px; /* Set logo size */
+  }
+  
+  /* Navbar Search Button */
+  .navbar .btn-outline-success {
+    color: #28a745; /* Green color for the search button */
+    border-color: #28a745; /* Green border */
+  }
+  
+  .navbar .btn-outline-success:hover {
+    background-color: #28a745; /* Green background on hover */
+    color: #fff; /* White text on hover */
+    border-color: #28a745; /* Green border */
+  }
+  
+  /* Make Navbar smaller on scroll */
+  .navbar.scrolled {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Smaller shadow on scroll */
+    padding: 5px 0; /* Reduce padding when scrolled */
+  }
+  
+  /* Ensure content is not hidden behind navbar */
+  body {
+    padding-top: 70px; /* Adjust content padding to accommodate the fixed navbar */
+  }
+  

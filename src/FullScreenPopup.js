@@ -1,5 +1,5 @@
-// FullScreenPopup.js
 import React, { useState, useEffect } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
 
 // Full-screen Popup Component
 function FullScreenPopup() {
@@ -17,6 +17,58 @@ function FullScreenPopup() {
     }, 5000);
 
     return () => clearTimeout(timer); // Cleanup the timer on component unmount
+  }, []);
+
+  useEffect(() => {
+    // Inject the responsive styles dynamically into the document's head
+    const style = document.createElement("style");
+    style.innerHTML = `
+      @media (max-width: 768px) {
+        .popupContent {
+          width: 90%;
+          padding: 25px;
+        }
+
+        .title {
+          font-size: 24px;
+        }
+
+        .message {
+          font-size: 16px;
+        }
+
+        .closeButton {
+          padding: 12px 24px;
+          font-size: 16px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .popupContent {
+          width: 95%;
+          padding: 20px;
+        }
+
+        .title {
+          font-size: 22px;
+        }
+
+        .message {
+          font-size: 14px;
+        }
+
+        .closeButton {
+          padding: 10px 20px;
+          font-size: 14px;
+        }
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Cleanup on component unmount
+    return () => {
+      document.head.removeChild(style);
+    };
   }, []);
 
   if (!isVisible) return null; // Don't render the popup if it's not visible
@@ -41,76 +93,59 @@ const styles = {
     left: 0,
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(0, 0, 0, 0.85)", // Darker semi-transparent background
+    backgroundColor: "rgba(0, 0, 0, 0.85)",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    zIndex: 9999, // Ensure it's above other content
-    backdropFilter: "blur(10px)", // More intense blur for the background
-    transition: "background-color 0.3s ease, backdrop-filter 0.3s ease", // Smooth transition for overlay fade-in
+    zIndex: 9999,
+    backdropFilter: "blur(10px)",
+    overflow: "hidden",
   },
   popupContent: {
     backgroundColor: "#fff",
     padding: "40px",
-    borderRadius: "20px", // More rounded corners for a modern feel
+    borderRadius: "20px",
     textAlign: "center",
     width: "80%",
-    maxWidth: "650px",
-    boxShadow: "0px 12px 40px rgba(0, 0, 0, 0.3)", // Deeper shadow for depth
-    border: "2px solid #007BFF", // Border to accentuate the popup
-    background: "linear-gradient(145deg, #f0f0f0, #d9d9d9)", // Subtle gradient background
-    transition: "transform 0.4s ease-in-out, box-shadow 0.3s ease-out", // Smooth zoom effect and shadow transition
-    animation: "popupAnimation 0.4s ease-out", // Animating the popup appearance
+    maxWidth: "650px", // Ensures it doesn't grow too large on big screens
+    minWidth: "300px", // Ensures it stays wide enough on small screens
+    boxShadow: "0px 12px 40px rgba(0, 0, 0, 0.3)",
+    border: "2px solid #007BFF",
+    background: "linear-gradient(145deg, #f0f0f0, #d9d9d9)",
+    transition: "transform 0.3s ease-in-out", // Smooth transform for scaling effect
   },
   title: {
     fontSize: "30px",
     fontWeight: "700",
     color: "#333",
     marginBottom: "15px",
-    textTransform: "uppercase", // Adding uppercase effect for title
-    letterSpacing: "2px", // Slight spacing between letters for better readability
+    textTransform: "uppercase",
+    letterSpacing: "2px",
   },
   message: {
     fontSize: "20px",
     color: "#555",
     marginBottom: "25px",
-    lineHeight: "1.6", // Improved line height for better readability
+    lineHeight: "1.6",
   },
   actions: {
     display: "flex",
     justifyContent: "center",
-    gap: "20px", // Space between buttons
+    gap: "20px",
   },
   closeButton: {
     padding: "14px 28px",
     backgroundColor: "#007BFF",
     color: "white",
     border: "none",
-    borderRadius: "50px", // Rounded button edges for modern appearance
+    borderRadius: "50px",
     cursor: "pointer",
     fontSize: "18px",
-    transition: "all 0.4s ease", // Smooth transition on hover
-    boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)", // Soft shadow on button
-    transform: "scale(1)", // Initial scale of button
-    border: "2px solid #007BFF", // Border around button to make it stand out
-  },
-  closeButtonHover: {
-    backgroundColor: "#0056b3",
-    transform: "scale(1.1)", // Slight scale effect on hover for visual feedback
-    boxShadow: "0px 8px 25px rgba(0, 0, 0, 0.4)", // Enhanced shadow on hover
-  },
-  closeButtonFocus: {
-    outline: "none",
-    boxShadow: "0 0 0 4px rgba(0, 123, 255, 0.5)", // Focus ring when clicked
+    transition: "all 0.4s ease",
+    boxShadow: "0px 4px 15px rgba(0, 0, 0, 0.2)",
+    transform: "scale(1)",
+    border: "2px solid #007BFF",
   },
 };
-
-// Optional keyframe animation for popup appearance (to make it pop-in)
-const popupAnimation = `
-  @keyframes popupAnimation {
-    0% { opacity: 0; transform: scale(0.8); }
-    100% { opacity: 1; transform: scale(1); }
-  }
-`;
 
 export default FullScreenPopup;
