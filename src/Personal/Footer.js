@@ -1,14 +1,14 @@
-import React from 'react'
-import "./footer.css"
+import React from 'react';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function Footer() {
   return (
     <div>
-      <footer className="footer mt-0" >
+      <footer className="footer bg-light mt-5">
         <div className="container mt-0">
           <div className="g-4 py-4 row">
-            <div className="col-lg-4 col-md-12 col-12">
-              <h6 className="">Categories</h6>
+            <div className="col-lg-4 col-md-12 col-12 text-dark">
+              <h6>Categories</h6>
               <div className="row">
                 <div className="col-6">
                   <div className="flex-column nav">
@@ -74,7 +74,7 @@ export default function Footer() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-8 col-md-12 col-12">
+            <div className="col-lg-8 col-md-12 col-12 text-dark">
               <div className="g-4 row">
                 <div className="col-md-3 col-sm-6 col-6">
                   <h6 className="mb-4">Get to know us</h6>
@@ -159,7 +159,7 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="border-top py-4">
+          <div className="border-top py-4 text-dark">
             <div className="align-items-center row">
               <div className="text-lg-start text-center mb-2 mb-lg-0 col-lg-5">
                 <ul className="mb-0 undefined list-inline">
@@ -181,8 +181,7 @@ export default function Footer() {
                 <div className="list-inline mb-0 text-lg-end text-center">
                   <div className="list-inline-item mb-2 mb-md-0 ">
                     <h6>
-                    Get deliveries with Healthy Cart
-
+                      Get deliveries with Healthy Cart
                     </h6>
                   </div>
                   <div className="list-inline-item ms-5 me-3">
@@ -195,14 +194,14 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          <div className="border-top py-4">
+          <div className="border-top py-4 text-dark">
             <div className="align-items-center row">
               <div className="col-md-6">
                 <span className="small ">
                   <h6>
-                  © 2022 HealthyCart. All rights reserved. Powered by
+                    © 2022 HealthyCart. All rights reserved. Powered by
                   </h6>
-                
+
                   <h6>Healthy Cart</h6>
                 </span>
               </div>
@@ -225,5 +224,5 @@ export default function Footer() {
         </div>
       </footer>
     </div>
-  )
+  );
 }

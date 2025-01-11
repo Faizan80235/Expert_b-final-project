@@ -1,15 +1,11 @@
-
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import NProgress from 'nprogress'; // Import NProgress
-import 'nprogress/nprogress.css';  // Import NProgress styles
+import 'nprogress/nprogress.css'; // Import NProgress styles
 import image from "../Personal/images/image7.png";
-import "./Style.css";
 
 export default function Navbars() {
-  const [searchQuery, setSearchQuery] = useState(''); // State to store the search query
   const location = useLocation(); // React Router hook to track route changes
-  const navigate = useNavigate(); // Navigate to another page when search is submitted
 
   useEffect(() => {
     NProgress.start(); // Start loading animation
@@ -18,32 +14,9 @@ export default function Navbars() {
     }, 500); // Adjust the timeout as needed
   }, [location]); // Trigger on route changes
 
-  // Handle input change in the search bar
-  const handleSearchInput = (e) => {
-    setSearchQuery(e.target.value); // Update search query as user types
-  };
-
-  // Handle form submission for the search
-  const handleSearchSubmit = (e) => {
-    e.preventDefault();
-    if (searchQuery.trim() !== '') {
-      // Check if the search query matches any known routes
-      const lowerCaseQuery = searchQuery.trim().toLowerCase();
-      const knownRoutes = ['home', 'about', 'products', 'contact'];
-
-      // If the search matches a route, navigate to that page
-      if (knownRoutes.includes(lowerCaseQuery)) {
-        navigate(`/${lowerCaseQuery}`);
-      } else {
-        // Otherwise, handle content-based search (you can implement filtering here)
-        navigate(`/search?q=${searchQuery}`);
-      }
-    }
-  };
-
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <a className="navbar-brand">
             <img src={image} className="mt-3" alt="Logo" />
@@ -70,24 +43,55 @@ export default function Navbars() {
               <li className="nav-item">
                 <Link className="nav-link text-dark" to="/Products">Products</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link text-dark" to="/Contact">Contact</Link>
+              
+              {/* Contact Dropdown */}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Contact
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link className="dropdown-item" to="/Contact">Contact Us</Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/Login">Login</Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/Signup">Sign Up</Link>
+                  </li>
+                </ul>
+              </li>
+
+              {/* Dashboard Dropdown (New) */}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="navbarDashboardDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dashboard
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="navbarDashboardDropdown">
+                  <li>
+                    <Link className="dropdown-item" to="/Dashboard/Profile">User Dashbaord</Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/Validation">Admin Dashbaord</Link>
+                  </li>
+                
+                </ul>
               </li>
             </ul>
-            {/* Search Form */}
-            <form className="d-flex" role="search" onSubmit={handleSearchSubmit}>
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                value={searchQuery} // Controlled input
-                onChange={handleSearchInput} // Update state as user types
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
           </div>
         </div>
       </nav>

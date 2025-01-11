@@ -2,6 +2,8 @@ import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import "./Allfile.css"
+
 function Signup() {
     return (
         <div style={{ marginLeft: "16%" }}>

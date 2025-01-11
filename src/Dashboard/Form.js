@@ -1,59 +1,48 @@
-import React, { useState } from "react";
-import "./Style.css";
+import React from "react";
 
 const Form = () => {
-  const [image, setImage] = useState(null); // State to store the image file
-
-  // Function to handle file drop
-  const handleDrop = (e) => {
-    e.preventDefault();
-    const file = e.dataTransfer.files[0]; // Get the first file
-    if (file && file.type.startsWith("image/")) {
-      setImage(URL.createObjectURL(file)); // Store the image URL for preview
-    }
-  };
-
-  // Function to handle file selection from input
-  const handleFileChange = (e) => {
-    const file = e.target.files[0]; // Get the selected file
-    if (file && file.type.startsWith("image/")) {
-      setImage(URL.createObjectURL(file)); // Store the image URL for preview
-    }
-  };
-
   return (
-    <div className="form-container">
+    <div className="container mt-5" style={{ maxWidth: "500px" }}>
+      <h2 className="mb-4">Product Information</h2>
       <form>
-        <h2>Product Information</h2>
-        <div className="form-group">
-          <label>Title</label>
-          <input type="text" placeholder="Product Name" />
+        <div className="form-group mb-3">
+          <label htmlFor="product-name" className="form-label">Title</label>
+          <input
+            type="text"
+            className="form-control"
+            id="product-name"
+            placeholder="Product Name"
+          />
         </div>
-        <div className="form-group">
-          <label>Product Category</label>
-          <select>
+        <div className="form-group mb-3">
+          <label htmlFor="category" className="form-label">Product Category</label>
+          <select id="category" className="form-control">
             <option value="snacks">Snacks & Munchies</option>
             <option value="beverages">Beverages</option>
             <option value="dairy">Dairy Products</option>
           </select>
         </div>
-        <div className="form-group">
-          <label>Weight</label>
-          <input type="number" placeholder="Weight" />
+        <div className="form-group mb-3">
+          <label htmlFor="weight" className="form-label">Weight</label>
+          <input
+            type="number"
+            className="form-control"
+            id="weight"
+            placeholder="Weight"
+          />
         </div>
-        <div className="form-group">
-          <label>Unit</label>
-          <select>
+        <div className="form-group mb-3">
+          <label htmlFor="unit" className="form-label">Unit</label>
+          <select id="unit" className="form-control">
             <option value="kg">Kilograms</option>
             <option value="g">Grams</option>
             <option value="lbs">Pounds</option>
           </select>
         </div>
-        <div className="form-group">
-          <label>Product Images</label>
+        <div className="form-group mb-3">
+          <label htmlFor="product-images" className="form-label">Product Images</label>
           <div
             className="image-upload"
-            onDrop={handleDrop} // Handle drop event
             onDragOver={(e) => e.preventDefault()} // Allow drop
             style={{
               border: "2px dashed #ccc",
@@ -65,31 +54,46 @@ const Form = () => {
             <input
               type="file"
               accept="image/*"
-              onChange={handleFileChange} // Handle file input change
               style={{ display: "none" }}
               id="file-upload"
+              onChange={(e) => {
+                const file = e.target.files[0];
+                if (file) {
+                  const imageUrl = URL.createObjectURL(file);
+                  const previewImage = document.getElementById("image-preview");
+                  previewImage.src = imageUrl;
+                  previewImage.style.display = "block"; // Display the image
+                }
+              }}
             />
             <label htmlFor="file-upload" style={{ cursor: "pointer" }}>
-            <p>Drop files here to upload</p>
-          
+              <p>Drop files here to upload</p>
             </label>
-            {image && (
-              <div>
-                <img
-                  src={image}
-                  alt="Preview"
-                  style={{ marginTop: "10px", maxWidth: "100%", maxHeight: "150px" }}
-                />
-              </div>
-            )}
+            <div>
+              <img
+                id="image-preview"
+                alt="Preview"
+                style={{
+                  display: "none", // Hidden initially
+                  marginTop: "10px",
+                  maxWidth: "100%",
+                  maxHeight: "150px",
+                }}
+              />
+            </div>
           </div>
         </div>
-        <div className="form-group">
-          <label>Product Descriptions</label>
-          <textarea placeholder="Write descriptions here"></textarea>
+        <div className="form-group mb-3">
+          <label htmlFor="product-description" className="form-label">Product Descriptions</label>
+          <textarea
+            id="product-description"
+            className="form-control"
+            placeholder="Write descriptions here"
+          ></textarea>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn btn-primary">Submit</button>
       </form>
+      
     </div>
   );
 };

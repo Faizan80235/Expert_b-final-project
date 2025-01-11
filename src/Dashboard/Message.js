@@ -1,85 +1,89 @@
-import React, { useState } from "react";
-import "./styles.css";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Message = () => {
-  const [formData, setFormData] = useState({
-    title: "",
-    category: "General",
-    message: "",
-    recipient: "",
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Message sent:", formData);
-    alert("Message sent successfully!");
-    setFormData({
-      title: "",
-      category: "General",
-      message: "",
-      recipient: "",
-    });
-  };
-
   return (
-    <div className="dashboard-container">
-  
-      <div className="main-area">
-        
-        <form onSubmit={handleSubmit} className="message-form">
-          <label htmlFor="title">Title</label>
-          <input
-            type="text"
-            id="title"
-            name="title"
-            placeholder="Enter message title"
-            value={formData.title}
-            onChange={handleChange}
-            required
-          />
-
-          <label htmlFor="category">Category</label>
-          <select
-            id="category"
-            name="category"
-            value={formData.category}
-            onChange={handleChange}
-            required
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <form
+            className="card p-4"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const formData = {
+                title: e.target.title.value,
+                category: e.target.category.value,
+                recipient: e.target.recipient.value,
+                message: e.target.message.value,
+              };
+              console.log("Message sent:", formData);
+              alert("Message sent successfully!");
+              e.target.reset(); // Reset the form after submission
+            }}
           >
-            <option value="General">General</option>
-            <option value="Support">Support</option>
-            <option value="Feedback">Feedback</option>
-          </select>
+            <div className="mb-3">
+              <label htmlFor="title" className="form-label">
+                Title
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="title"
+                name="title"
+                placeholder="Enter message title"
+                required
+              />
+            </div>
 
-          <label htmlFor="recipient">Recipient</label>
-          <input
-            type="text"
-            id="recipient"
-            name="recipient"
-            placeholder="Enter recipient name"
-            value={formData.recipient}
-            onChange={handleChange}
-            required
-          />
+            <div className="mb-3">
+              <label htmlFor="category" className="form-label">
+                Category
+              </label>
+              <select
+                className="form-select"
+                id="category"
+                name="category"
+                required
+              >
+                <option value="General">General</option>
+                <option value="Support">Support</option>
+                <option value="Feedback">Feedback</option>
+              </select>
+            </div>
 
-          <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write your message here"
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          />
+            <div className="mb-3">
+              <label htmlFor="recipient" className="form-label">
+                Recipient
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="recipient"
+                name="recipient"
+                placeholder="Enter recipient name"
+                required
+              />
+            </div>
 
-          <button type="submit" className="btn-send">Send Message</button>
-        </form>
+            <div className="mb-3">
+              <label htmlFor="message" className="form-label">
+                Message
+              </label>
+              <textarea
+                className="form-control"
+                id="message"
+                name="message"
+                placeholder="Write your message here"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

@@ -1,45 +1,28 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
-import "./styles.css"; // Import styles
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const Logout = () => {
-  const [confirmLogout, setConfirmLogout] = useState(false);
-  const navigate = useNavigate();
-
+const LogoutBox = () => {
   const handleLogout = () => {
-    // Clear session data (localStorage, sessionStorage, etc.)
-    localStorage.clear();
-    sessionStorage.clear();
-
-    // Redirect to login page after logout
-    navigate("/login");
+    // Simulate logout action here, for example:
+    alert("Logged out successfully!");
   };
 
   return (
-    <div className="logout-container">
-      {confirmLogout ? (
-        <>
-          <p className="logout-message">Are you sure you want to log out?</p>
-          <div className="logout-buttons">
-            <button className="confirm" onClick={handleLogout}>
-              Yes, Log Out
-            </button>
-            <button className="cancel" onClick={() => setConfirmLogout(false)}>
-              Cancel
+    <div className="container mt-5">
+      <div className="row justify-content-center">
+        <div className="col-md-4">
+          <div className="card p-4 text-center">
+            <h5 className="card-title">Are you sure you want to logout?</h5>
+            <p className="card-text">Click below to logout from your account.</p>
+            <button onClick={handleLogout} className="btn btn-danger">
+              Logout
             </button>
           </div>
-        </>
-      ) : (
-        <>
-          <p className="logout-message">You have successfully logged out.</p>
-          <button className="confirm" onClick={() => navigate("/login")}>
-            
-            Go to Login
-          </button>
-        </>
-      )}
+        </div>
+      </div>
+      
     </div>
   );
 };
 
-export default Logout;
+export default LogoutBox;

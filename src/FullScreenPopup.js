@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.css"
+
 
 // Full-screen Popup Component
 function FullScreenPopup() {

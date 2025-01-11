@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import {
   LineChart,
   Line,
@@ -23,7 +24,7 @@ function Dashboard() {
   return (
     <div>
       {/* Main Content */}
-      <div className="flex-grow-1 ms-lg-250">
+      <div className="flex-grow-1">
         <nav className="navbar navbar-light bg-light d-lg-none">
           <button className="btn" onClick={toggleSidebar}>
             <FontAwesomeIcon icon={faBars} className="text-dark" />
@@ -72,15 +73,13 @@ function Carasuel() {
       }}
     >
       <div style={{ maxWidth: '400px' }}>
-        <h1 className="fw-bold">Welcome back! FreshCart</h1>
+        <h1 className="fw-bold">Welcome back! HEALTHY-CART TO FAIZAN</h1>
         <p>FreshCart is simple & clean design for developers and designers.</p>
-     
-          <Link to="/Product">
-          <button className="btn btn-success" >
-          Create Product
+        <Link to="/ProductForm">
+          <button className="btn btn-success">
+            Create Product
           </button>
-
-          </Link>
+        </Link>
       </div>
     </div>
   );
@@ -120,24 +119,22 @@ const data = [
   { month: 'Apr', TotalIncome: 0, TotalExpense: 0 },
 ];
 
-
-
 const RevenueChart = () => {
-    return (
-      <div className="card shadow-sm p-3">
-        <h3 className="mb-3">Revenue (+0% than last year)</h3>
-        <LineChart width={400} height={300} data={data}> {/* Adjusted width */}
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="month" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          <Line type="monotone" dataKey="TotalIncome" stroke="#82ca9d" />
-          <Line type="monotone" dataKey="TotalExpense" stroke="#ffc658" />
-        </LineChart>
-      </div>
-    );
-  };
-  
+  return (
+    <div className="card shadow-sm p-3">
+      <h3 className="mb-3">Revenue (+0% than last year)</h3>
+      <LineChart width={400} height={300} data={data}> {/* Adjusted width */}
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="month" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        <Line type="monotone" dataKey="TotalIncome" stroke="#82ca9d" />
+        <Line type="monotone" dataKey="TotalExpense" stroke="#ffc658" />
+      </LineChart>
+      
+    </div>
+  );
+};
 
 export default Dashboard;
