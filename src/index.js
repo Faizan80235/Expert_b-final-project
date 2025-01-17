@@ -9,6 +9,7 @@ import "bootstrap/dist/js/bootstrap.bundle"
 import 'react-bootstrap'
 import 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>

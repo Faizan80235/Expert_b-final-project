@@ -1,10 +1,13 @@
-import React from 'react';
-import Routing  from "../src/Personal/Routes/Routing"
-function App(){
-  return(
+import React from 'react'
+import Dashboard from './UserDashboard/Dashboard'
+import Routing from "../src/Personal/Routes/Routing"
+function App() {
+  return (
     <div>
-      <Routing></Routing>
+        {/* <Dashboard></Dashboard> */}
+        <Routing></Routing>
     </div>
   )
 }
-export default App;
+
+export default App
