@@ -63,9 +63,7 @@ export default function Navbars() {
                   <li>
                     <Link className="dropdown-item" to="/Login">Login</Link>
                   </li>
-                  <li>
-                    <Link className="dropdown-item" to="/Signup">Sign Up</Link>
-                  </li>
+                  
                 </ul>
               </li>
 
